@@ -1,0 +1,67 @@
+.payment-popup-container {
+  height: 80vh;
+  width: 80vw;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-menu {
+  height: 80%;
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.payment-types-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.payment-type-div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.radio-input {
+  cursor: pointer;
+}
+.payment-label {
+  font-size: 15px;
+  cursor: pointer;
+}
+.payment-cart-summary-container {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.payment-cart-summary-heading {
+  font-size: 15px;
+}
+.payment-cart-summary-amount {
+  font-size: 15px;
+  font-weight: bold;
+  color: #090315;
+}
+.confirm-order-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #400202;
+  font-family: 'roboto';
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.success-message {
+  font-size: 20px;
+  text-align: center;
+}

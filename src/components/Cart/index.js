@@ -1,5 +1,8 @@
+import Popup from 'reactjs-popup'
+
 import Header from '../Header'
 import CartListView from '../CartListView'
+import PaymentPopup from '../PaymentPopup'
 
 import CartContext from '../../context/CartContext'
 import EmptyCartView from '../EmptyCartView'
@@ -31,9 +34,16 @@ const Cart = () => (
             <p className="cart-summary-items">
               {cartList.length} Items in cart
             </p>
-            <button type="button" className="check-out-button">
-              Checkout
-            </button>
+            <Popup
+              trigger={
+                <button type="button" className="check-out-button">
+                  Checkout
+                </button>
+              }
+              modal
+            >
+              <PaymentPopup cartList={cartList} />
+            </Popup>
           </div>
         )
       }
