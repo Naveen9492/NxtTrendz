@@ -79,6 +79,10 @@
       "warn",
       "always"
     ],
-    "radix": "off"
+    "radix": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "class-methods-use-this": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-no-useless-fragment": "off"
   }
 }
